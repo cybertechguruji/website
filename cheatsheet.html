@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <div class="head">
+            <h1>CyberTech Guruji</h1>
+            <div class="btn">
+                <input type="checkbox" id="nav-toggle">
+                <label for="nav-toggle" class="icon-burger">
+                    <div id="line"></div>
+                    <div id="line"></div>
+                    <div id="line"></div>
+                </label>
+            </div>
+        </div>
+        <nav id="nav">
+            <a href="index.html">Blog</a>
+            <a href="project.html">Project</a>
+            <a href="cheatsheet.html">CheatSheets</a>
+            <a href="about-me.html">About Me</a>
+            <a href="contact-me.html">Contact Me</a>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start  -->
+    <main>
+        <h1>Cheatsheets</h1>
+        <section>
+            <a href="https://cybertechguruji.github.io/javascript/" target="_blank">
+                <div class="card">
+                    <div class="img">
+                        <img src="image/js-cheasheets.png" alt="">
+                    </div>
+                    <h2>JavaScript CheatSheets</h2>
+                </div>
+            </a>
+        </section>
+    </main>
+    <!-- Main End  -->
+    <!-- Footer Start -->
+    <footer>
+        <nav class="nav1">
+            <a href="index.html">Blog</a>
+            <a href="project.html">Project</a>
+            <a href="cheatsheet.html">CheatSheets</a>
+            <a href="about-me.html">About Me</a>
+            <a href="contact-me.html">Contact Me</a>
+        </nav>
+        <nav class="nav2">
+            <p>Made with <img
+                    src="https://uxwing.com/wp-content/themes/uxwing/download/24-sport-and-awards/playing-card-heart-shape.svg"
+                    alt="" width="30px" title="Love"> By <a href="index.html">Cybertech Guruji</a> | &copy; 2022</p>
+        </nav>
+    </footer>
+    <!-- Footer End -->
+    <script>
+        document.getElementById("nav-toggle").onclick = function show() {
+            let nav = document.getElementById("nav")
+
+            if (document.getElementById("nav-toggle").checked == true) {
+                nav.style.display = "flex";
+            }
+            else {
+                nav.style.display = "none";
+
+            }
+        }
+    </script>
+</body>
+
+</html>

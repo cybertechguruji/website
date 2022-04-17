@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* burger btn */
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+.head .btn .icon-burger {
+  display: none;
+}
+.head .btn .icon-burger #line {
+  width: 30px;
+  height: 5px;
+  background-color: black;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all 0.1s 0.1s ease-in-out;
+}
+/* burger btn end  */
+
+/* Windows Start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  'Ubuntu', sans-serif;
+}
+/* Windows End  */
+
+/* Header Start  */
+header {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0 0 5px 5px;
+}
+header .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  margin: 10px;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin: 20px;
+}
+header nav a:hover {
+  color: darkblue;
+}
+/* Header End  */
+
+/* Main Start */
+
+main{
+  padding: 1rem;
+}
+main h1{
+  font-size: 3rem;
+  text-align: center;
+}
+main section{
+  margin: 10px auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+main section a{
+  text-decoration: none;
+  color: black;
+}
+main section .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  max-width: 350px;
+  height: 275px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px lightgrey,-5px -5px 10px lightgrey;
+}
+section .card .img{
+  border-radius: 10px 10px 0 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+.card .img img{
+  max-width: 100%;
+}
+.card h2{
+  margin-top: 10px;
+  max-width: 100%;
+  word-wrap: break-word;
+  text-align: center;
+}
+main section .card:hover{
+  transform: scale(105%);
+}
+
+/* Main End  */
+
+/* Footer Start  */
+footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #18171D;
+  color: #5A6776;
+  font-size: 1.2rem;
+  align-items: center;
+}
+footer .nav1{
+  padding: 20px;
+}
+footer .nav1 a{
+  padding: 10px;
+  text-decoration: none;
+  color: #5A6776;
+}
+footer .nav1 a:hover{
+  color: white;
+}
+
+footer .nav2{
+  padding: 20px;
+}
+footer .nav2 a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+/* Footer End  */
+
+@media screen and (max-width: 768px) {
+/* burger btn */
+  .head .btn .icon-burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .head .btn :checked ~ .icon-burger #line:nth-child(1) {
+    transform: translateY(10px) rotate(225deg);
+  }
+
+  .head .btn :checked ~ .icon-burger #line:nth-child(3) {
+    transform: translateY(-10px) rotate(-225deg);
+  }
+
+  .head .btn :checked ~ .icon-burger #line:nth-child(2) {
+    opacity: 0;
+  }
+/* burger btn end  */
+
+/* Header Start  */
+  header {
+    padding: 10px 20px;
+    flex-direction: column;
+  }
+  header .head {
+    width: 100%;
+  }
+  header .head h1{
+    font-size: 1.5rem;
+  }
+  header nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+  header nav a {
+    padding: 10px;
+  }
+/* Header End  */
+
+/* Footer start  */
+footer{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+Footer .nav1 a{
+  display: inline-block;
+}
+footer .nav2{
+  font-size: 1rem;
+}
+}
