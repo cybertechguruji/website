@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* Windows Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Ubuntu', sans-serif;
+  }
+  /* Windows End */
+
+/* burger btn */
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+  }
+.head .btn .icon-burger {
+    display: none;
+}
+.head .btn .icon-burger #line {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all 0.1s 0.1s ease-in-out;
+}
+/* burger btn end  */
+
+/* header start  */
+header{
+    background-color: #bcbcbc;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+header .head{
+    display: flex;
+    justify-content: space-between;
+}
+#nav{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* burger btn */
+      .head .btn .icon-burger {
+        display: block;
+        cursor: pointer;
+      }
+    
+      .head .btn :checked ~ .icon-burger #line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+      }
+    
+      .head .btn :checked ~ .icon-burger #line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+      }
+    
+      .head .btn :checked ~ .icon-burger #line:nth-child(2) {
+        opacity: 0;
+      }
+}
+    /* burger btn end  */

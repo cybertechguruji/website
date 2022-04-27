@@ -40,6 +40,7 @@ header .head {
   align-items: center;
 }
 header nav {
+  transition: all 3s ease;
   display: flex;
   margin: 10px;
 }
